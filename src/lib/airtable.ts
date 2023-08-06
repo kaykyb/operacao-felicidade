@@ -15,7 +15,9 @@ export type Contest = {
 
 export async function getContests(): Promise<Contest[]> {
   const table = await airtableBase.table("Premios").select().all();
-  return table.map((rifa) => rifa.fields as Contest);
+  return table
+    .map((rifa) => rifa.fields as Contest)
+    .sort((a, b) => a.Rifa - b.Rifa);
 }
 
 export type ContestTicket = {
