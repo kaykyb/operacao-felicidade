@@ -31,6 +31,38 @@ export default function RootLayout({
               />
             </Link>
           </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2 px-2 mb-8">
+            <a
+              href="https://bit.ly/OAjrkemsdo2937yadjh273234adsd"
+              target="_blank"
+              className="bg-pink-600 border text-white p-3 rounded-full text-center text-lg font-bold flex flex-row items-center justify-center"
+            >
+              <Image
+                src="/whatsapp.svg"
+                alt="Whatsapp"
+                className="mr-2"
+                width={24}
+                height={24}
+                priority
+              />
+              Comprar aqui
+            </a>
+            <a
+              href="https://nubank.com.br/pagar/cp5bs/t62DXbg9hl"
+              target="_blank"
+              className="bg-blue-600 text-white p-3 rounded-full text-center text-lg font-bold flex flex-row items-center justify-center"
+            >
+              <Image
+                src="/pix.svg"
+                alt="Pix"
+                className="mr-2"
+                width={24}
+                height={24}
+                priority
+              />
+              Pagamento PIX
+            </a>
+          </div>
           {children}
         </div>
       </body>
