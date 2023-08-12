@@ -33,7 +33,7 @@ export default function RootLayout({
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2 px-2 mb-8">
             <a
-              href="https://bit.ly/OAjrkemsdo2937yadjh273234adsd"
+              href="https://bit.ly/OAjrkemsdo2937yadjh273234adsK"
               target="_blank"
               className="bg-pink-600 border text-white p-3 rounded-full text-center text-lg font-bold flex flex-row items-center justify-center"
             >
