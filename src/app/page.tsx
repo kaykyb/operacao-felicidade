@@ -1,6 +1,8 @@
 import { airtableBase, Contest, getContests } from "@/lib/airtable";
 import Link from "next/link";
 
+export const fetchCache = "force-no-store";
+
 export default async function Home() {
   const contests = await getContests();
 

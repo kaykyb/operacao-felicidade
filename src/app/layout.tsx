@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   title: "Operação Felicidade",
 };
 
+export const fetchCache = "force-no-store";
+
 export default function RootLayout({
   children,
 }: {
