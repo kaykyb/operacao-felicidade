@@ -8,7 +8,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rifas Operação Felicidade",
+  title: "Operação Felicidade",
 };
 
 export default function RootLayout({

@@ -12,7 +12,7 @@ export default async function ContestPage({
   const contest = contests.find((c) => `${c.Rifa}` === params.contest);
 
   if (!contest) {
-    throw new Error("Rifa não encontrada!");
+    throw new Error("Concurso não encontrada!");
   }
 
   return (
