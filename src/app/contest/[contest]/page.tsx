@@ -2,6 +2,7 @@ import { ContestTicket, getContestTickets, getContests } from "@/lib/airtable";
 import React from "react";
 
 export const fetchCache = "force-no-store";
+export const revalidate = 0;
 
 export default async function ContestPage({
   params,
