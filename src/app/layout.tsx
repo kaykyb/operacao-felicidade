@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -21,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="robots" content="noindex,nofollow" />
+      </Head>
       <body className={inter.className}>
         <div className="container mx-auto xl:max-w-5xl mb-24">
           <div className="h-72 flex flex-row items-center justify-center">
@@ -33,6 +37,9 @@ export default function RootLayout({
                 priority
               />
             </Link>
+          </div>
+          <div className="justify-center text-center mb-4">
+            Concursos beneficientes
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-2 px-2 mb-8">
             <a
@@ -67,6 +74,10 @@ export default function RootLayout({
             </a>
           </div>
           {children}
+        </div>
+        <div className="justify-center text-center mb-4 text-gray-800">
+          Todo o conteúdo deste site é de responsabilidade de
+          https://www.instagram.com/operacao_felicidade/
         </div>
       </body>
     </html>
